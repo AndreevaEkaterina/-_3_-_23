@@ -2,4 +2,17 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 Console.Clear();
+void Kub(int n)
+{
+    for (int i=1; i<=n; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)}");
+        if(i!=n)
+        {
+            Console.Write(", ");
+        }
+    }
+}
 Console.Write("Введите число:");
+int N = int.Parse(Console.ReadLine()!);
+Kub (N);
